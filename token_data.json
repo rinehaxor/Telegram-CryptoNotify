@@ -1,0 +1,989 @@
+[
+  {
+    "token": "BTC",
+    "initialPrice": 102739.97,
+    "finalPrice": 102823.97,
+    "percentageChange": "0.08",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "WRX",
+    "initialPrice": 0.2215,
+    "finalPrice": 0.2214,
+    "percentageChange": "-0.05",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "TKO",
+    "initialPrice": 0.4832,
+    "finalPrice": 0.4837,
+    "percentageChange": "0.10",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "BNB",
+    "initialPrice": 718.42,
+    "finalPrice": 717.35,
+    "percentageChange": "-0.15",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "JOE",
+    "initialPrice": 0.5984,
+    "finalPrice": 0.5973,
+    "percentageChange": "-0.18",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "AVAX",
+    "initialPrice": 51.08,
+    "finalPrice": 51.04,
+    "percentageChange": "-0.08",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "UTK",
+    "initialPrice": 0.0645,
+    "finalPrice": 0.0645,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "EGLD",
+    "initialPrice": 54.29,
+    "finalPrice": 54.09,
+    "percentageChange": "-0.37",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ONG",
+    "initialPrice": 0.4716,
+    "finalPrice": 0.4702,
+    "percentageChange": "-0.30",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ONT",
+    "initialPrice": 0.3447,
+    "finalPrice": 0.3434,
+    "percentageChange": "-0.38",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "RAY",
+    "initialPrice": 5.128,
+    "finalPrice": 5.113,
+    "percentageChange": "-0.29",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "SOL",
+    "initialPrice": 235.61,
+    "finalPrice": 235.48,
+    "percentageChange": "-0.06",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "FIDA",
+    "initialPrice": 0.3569,
+    "finalPrice": 0.3558,
+    "percentageChange": "-0.31",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "FTT",
+    "initialPrice": 2.6407,
+    "finalPrice": 2.6411,
+    "percentageChange": "0.02",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "WIF",
+    "initialPrice": 3.276,
+    "finalPrice": 3.26,
+    "percentageChange": "-0.49",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "DIA",
+    "initialPrice": 0.9598,
+    "finalPrice": 0.9565,
+    "percentageChange": "-0.34",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "UNFI",
+    "initialPrice": 1.341,
+    "finalPrice": 1.341,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "DEGO",
+    "initialPrice": 3.338,
+    "finalPrice": 3.334,
+    "percentageChange": "-0.12",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "JUP",
+    "initialPrice": 1.3197,
+    "finalPrice": 1.3136,
+    "percentageChange": "-0.46",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "JTO",
+    "initialPrice": 3.589,
+    "finalPrice": 3.574,
+    "percentageChange": "-0.42",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ETH",
+    "initialPrice": 3843.52,
+    "finalPrice": 3842.01,
+    "percentageChange": "-0.04",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "USTC",
+    "initialPrice": 0.02821,
+    "finalPrice": 0.02815,
+    "percentageChange": "-0.21",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "LUNA",
+    "initialPrice": 0.6996,
+    "finalPrice": 0.6974,
+    "percentageChange": "-0.31",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "KNC",
+    "initialPrice": 0.8124,
+    "finalPrice": 0.8108,
+    "percentageChange": "-0.20",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "MASK",
+    "initialPrice": 4.03,
+    "finalPrice": 4.02,
+    "percentageChange": "-0.25",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "FLUX",
+    "initialPrice": 0.8724,
+    "finalPrice": 0.8706,
+    "percentageChange": "-0.21",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "CFX",
+    "initialPrice": 0.2436,
+    "finalPrice": 0.2427,
+    "percentageChange": "-0.37",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "YGG",
+    "initialPrice": 0.79,
+    "finalPrice": 0.7877,
+    "percentageChange": "-0.29",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "APE",
+    "initialPrice": 1.908,
+    "finalPrice": 1.899,
+    "percentageChange": "-0.47",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "TVK",
+    "initialPrice": 0.05405,
+    "finalPrice": 0.05405,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ERN",
+    "initialPrice": 3.304,
+    "finalPrice": 3.3,
+    "percentageChange": "-0.12",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "PROM",
+    "initialPrice": 7.143,
+    "finalPrice": 7.125,
+    "percentageChange": "-0.25",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "AR",
+    "initialPrice": 26.6,
+    "finalPrice": 26.47,
+    "percentageChange": "-0.49",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "AGIX",
+    "initialPrice": 0.6141,
+    "finalPrice": 0.6141,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "FET",
+    "initialPrice": 1.855,
+    "finalPrice": 1.85,
+    "percentageChange": "-0.27",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "OCEAN",
+    "initialPrice": 0.6123,
+    "finalPrice": 0.6123,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "NMR",
+    "initialPrice": 23.64,
+    "finalPrice": 23.63,
+    "percentageChange": "-0.04",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "RNDR",
+    "initialPrice": 7.03,
+    "finalPrice": 7.03,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "MDT",
+    "initialPrice": 0.06229,
+    "finalPrice": 0.06233,
+    "percentageChange": "0.06",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "GRT",
+    "initialPrice": 0.3219,
+    "finalPrice": 0.3213,
+    "percentageChange": "-0.19",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "BAND",
+    "initialPrice": 2.153,
+    "finalPrice": 2.153,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "API3",
+    "initialPrice": 2.484,
+    "finalPrice": 2.482,
+    "percentageChange": "-0.08",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "TRB",
+    "initialPrice": 87.99,
+    "finalPrice": 87.78,
+    "percentageChange": "-0.24",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "RLC",
+    "initialPrice": 2.806,
+    "finalPrice": 2.815,
+    "percentageChange": "0.32",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "LINK",
+    "initialPrice": 23.67,
+    "finalPrice": 23.64,
+    "percentageChange": "-0.13",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "PYTH",
+    "initialPrice": 0.5124,
+    "finalPrice": 0.5097,
+    "percentageChange": "-0.53",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ACA",
+    "initialPrice": 0.1088,
+    "finalPrice": 0.1088,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "PHA",
+    "initialPrice": 0.1822,
+    "finalPrice": 0.1821,
+    "percentageChange": "-0.05",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "LIT",
+    "initialPrice": 1.153,
+    "finalPrice": 1.149,
+    "percentageChange": "-0.35",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "KSM",
+    "initialPrice": 44.62,
+    "finalPrice": 44.53,
+    "percentageChange": "-0.20",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "DOT",
+    "initialPrice": 10.372,
+    "finalPrice": 10.318,
+    "percentageChange": "-0.52",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "STEEM",
+    "initialPrice": 0.3036,
+    "finalPrice": 0.3028,
+    "percentageChange": "-0.26",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "SNT",
+    "initialPrice": 0.06868,
+    "finalPrice": 0.06883,
+    "percentageChange": "0.22",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "STMX",
+    "initialPrice": 0.00849,
+    "finalPrice": 0.00845,
+    "percentageChange": "-0.47",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "HIVE",
+    "initialPrice": 0.3126,
+    "finalPrice": 0.3127,
+    "percentageChange": "0.03",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "MBL",
+    "initialPrice": 0.004299,
+    "finalPrice": 0.0043,
+    "percentageChange": "0.02",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "IRIS",
+    "initialPrice": 0.00864,
+    "finalPrice": 0.00865,
+    "percentageChange": "0.12",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "NKN",
+    "initialPrice": 0.1327,
+    "finalPrice": 0.1321,
+    "percentageChange": "-0.45",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "LTO",
+    "initialPrice": 0.2243,
+    "finalPrice": 0.2245,
+    "percentageChange": "0.09",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "LOOM",
+    "initialPrice": 0.04831,
+    "finalPrice": 0.04831,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "SC",
+    "initialPrice": 0.00773,
+    "finalPrice": 0.007716,
+    "percentageChange": "-0.18",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "DATA",
+    "initialPrice": 0.05754,
+    "finalPrice": 0.05736,
+    "percentageChange": "-0.31",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "STORJ",
+    "initialPrice": 0.6899,
+    "finalPrice": 0.6871,
+    "percentageChange": "-0.41",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "STRAX",
+    "initialPrice": 0.07848,
+    "finalPrice": 0.0786,
+    "percentageChange": "0.15",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ANKR",
+    "initialPrice": 0.04899,
+    "finalPrice": 0.04886,
+    "percentageChange": "-0.27",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "BLZ",
+    "initialPrice": 0.1809,
+    "finalPrice": 0.1808,
+    "percentageChange": "-0.06",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "FIL",
+    "initialPrice": 7.927,
+    "finalPrice": 7.897,
+    "percentageChange": "-0.38",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "MANA",
+    "initialPrice": 0.7366,
+    "finalPrice": 0.734,
+    "percentageChange": "-0.35",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "SAND",
+    "initialPrice": 0.8612,
+    "finalPrice": 0.8597,
+    "percentageChange": "-0.17",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "HIGH",
+    "initialPrice": 2.137,
+    "finalPrice": 2.13,
+    "percentageChange": "-0.33",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "PYR",
+    "initialPrice": 4.18,
+    "finalPrice": 4.175,
+    "percentageChange": "-0.12",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "GMT",
+    "initialPrice": 0.2394,
+    "finalPrice": 0.2385,
+    "percentageChange": "-0.38",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "VTHO",
+    "initialPrice": 0.004122,
+    "finalPrice": 0.00413,
+    "percentageChange": "0.19",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "VET",
+    "initialPrice": 0.07012,
+    "finalPrice": 0.0695,
+    "percentageChange": "-0.88",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "TFUEL",
+    "initialPrice": 0.09001,
+    "finalPrice": 0.0901,
+    "percentageChange": "0.10",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "THETA",
+    "initialPrice": 2.961,
+    "finalPrice": 2.953,
+    "percentageChange": "-0.27",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ALT",
+    "initialPrice": 0.18494,
+    "finalPrice": 0.1851,
+    "percentageChange": "0.09",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "DYM",
+    "initialPrice": 2.406,
+    "finalPrice": 2.4,
+    "percentageChange": "-0.25",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "OP",
+    "initialPrice": 2.527,
+    "finalPrice": 2.526,
+    "percentageChange": "-0.04",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "POL",
+    "initialPrice": 0.6934,
+    "finalPrice": 0.6937,
+    "percentageChange": "0.04",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "LDO",
+    "initialPrice": 2.065,
+    "finalPrice": 2.064,
+    "percentageChange": "-0.05",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "XRP",
+    "initialPrice": 2.2663,
+    "finalPrice": 2.2628,
+    "percentageChange": "-0.15",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "XLM",
+    "initialPrice": 0.481,
+    "finalPrice": 0.4805,
+    "percentageChange": "-0.10",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "HBAR",
+    "initialPrice": 0.29474,
+    "finalPrice": 0.2957,
+    "percentageChange": "0.33",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ALGO",
+    "initialPrice": 0.4771,
+    "finalPrice": 0.4764,
+    "percentageChange": "-0.15",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "QNT",
+    "initialPrice": 144.3,
+    "finalPrice": 144.2,
+    "percentageChange": "-0.07",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "GTC",
+    "initialPrice": 1.261,
+    "finalPrice": 1.26,
+    "percentageChange": "-0.08",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "CVP",
+    "initialPrice": 0.0339,
+    "finalPrice": 0.0339,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "CVC",
+    "initialPrice": 0.1755,
+    "finalPrice": 0.1756,
+    "percentageChange": "0.06",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "AUCTION",
+    "initialPrice": 19.58,
+    "finalPrice": 19.58,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "FARM",
+    "initialPrice": 59.92,
+    "finalPrice": 59.91,
+    "percentageChange": "-0.02",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "CHESS",
+    "initialPrice": 0.2467,
+    "finalPrice": 0.2464,
+    "percentageChange": "-0.12",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ALPACA",
+    "initialPrice": 0.2812,
+    "finalPrice": 0.2805,
+    "percentageChange": "-0.25",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "TWT",
+    "initialPrice": 1.4104,
+    "finalPrice": 1.4092,
+    "percentageChange": "-0.09",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "C98",
+    "initialPrice": 0.2573,
+    "finalPrice": 0.257,
+    "percentageChange": "-0.12",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "SFP",
+    "initialPrice": 0.8207,
+    "finalPrice": 0.8206,
+    "percentageChange": "-0.01",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "SXP",
+    "initialPrice": 0.4549,
+    "finalPrice": 0.4539,
+    "percentageChange": "-0.22",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ENA",
+    "initialPrice": 0.9018,
+    "finalPrice": 0.8992,
+    "percentageChange": "-0.29",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "BAKE",
+    "initialPrice": 0.4081,
+    "finalPrice": 0.4074,
+    "percentageChange": "-0.17",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ROSE",
+    "initialPrice": 0.13085,
+    "finalPrice": 0.13055,
+    "percentageChange": "-0.23",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "OSMO",
+    "initialPrice": 0.6873,
+    "finalPrice": 0.6875,
+    "percentageChange": "0.03",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "AXL",
+    "initialPrice": 1.0474,
+    "finalPrice": 1.0444,
+    "percentageChange": "-0.29",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "KAVA",
+    "initialPrice": 0.6964,
+    "finalPrice": 0.6948,
+    "percentageChange": "-0.23",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "SCRT",
+    "initialPrice": 0.7025,
+    "finalPrice": 0.6999,
+    "percentageChange": "-0.37",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ATOM",
+    "initialPrice": 9.733,
+    "finalPrice": 9.688,
+    "percentageChange": "-0.46",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ZEN",
+    "initialPrice": 16.55,
+    "finalPrice": 16.49,
+    "percentageChange": "-0.36",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ZEC",
+    "initialPrice": 69.48,
+    "finalPrice": 69.38,
+    "percentageChange": "-0.14",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "WLD",
+    "initialPrice": 3.26,
+    "finalPrice": 3.243,
+    "percentageChange": "-0.52",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "KEY",
+    "initialPrice": 0.002265,
+    "finalPrice": 0.00228,
+    "percentageChange": "0.66",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "COTI",
+    "initialPrice": 0.16848,
+    "finalPrice": 0.16828,
+    "percentageChange": "-0.12",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ADA",
+    "initialPrice": 1.1981,
+    "finalPrice": 1.1934,
+    "percentageChange": "-0.39",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "CELO",
+    "initialPrice": 1.035,
+    "finalPrice": 1.0314,
+    "percentageChange": "-0.35",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "GAS",
+    "initialPrice": 6.589,
+    "finalPrice": 6.578,
+    "percentageChange": "-0.17",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "FLM",
+    "initialPrice": 0.1025,
+    "finalPrice": 0.1023,
+    "percentageChange": "-0.20",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "NEO",
+    "initialPrice": 20.97,
+    "finalPrice": 20.91,
+    "percentageChange": "-0.29",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "DUSK",
+    "initialPrice": 0.3092,
+    "finalPrice": 0.3082,
+    "percentageChange": "-0.32",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "STG",
+    "initialPrice": 0.4111,
+    "finalPrice": 0.4111,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ENS",
+    "initialPrice": 41.22,
+    "finalPrice": 41.2,
+    "percentageChange": "-0.05",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ID",
+    "initialPrice": 0.6176,
+    "finalPrice": 0.6153,
+    "percentageChange": "-0.37",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "CKB",
+    "initialPrice": 0.016931,
+    "finalPrice": 0.016823,
+    "percentageChange": "-0.64",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "VITE",
+    "initialPrice": 0.0159,
+    "finalPrice": 0.0159,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "T",
+    "initialPrice": 0.03693,
+    "finalPrice": 0.03685,
+    "percentageChange": "-0.22",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "KMD",
+    "initialPrice": 0.3881,
+    "finalPrice": 0.3878,
+    "percentageChange": "-0.08",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "JASMY",
+    "initialPrice": 0.0432,
+    "finalPrice": 0.04317,
+    "percentageChange": "-0.07",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "HNT",
+    "initialPrice": 4.67,
+    "finalPrice": 4.67,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "DOCK",
+    "initialPrice": 0.0039,
+    "finalPrice": 0.0039,
+    "percentageChange": "0.00",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "GHST",
+    "initialPrice": 1.355,
+    "finalPrice": 1.349,
+    "percentageChange": "-0.44",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "LOKA",
+    "initialPrice": 0.2932,
+    "finalPrice": 0.2922,
+    "percentageChange": "-0.34",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "SLP",
+    "initialPrice": 0.005418,
+    "finalPrice": 0.005406,
+    "percentageChange": "-0.22",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "AXS",
+    "initialPrice": 9.141,
+    "finalPrice": 9.107,
+    "percentageChange": "-0.37",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ATM",
+    "initialPrice": 2.376,
+    "finalPrice": 2.375,
+    "percentageChange": "-0.04",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "LAZIO",
+    "initialPrice": 1.859,
+    "finalPrice": 1.856,
+    "percentageChange": "-0.16",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "SANTOS",
+    "initialPrice": 4.82,
+    "finalPrice": 4.792,
+    "percentageChange": "-0.58",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ALPINE",
+    "initialPrice": 1.638,
+    "finalPrice": 1.634,
+    "percentageChange": "-0.24",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "CHZ",
+    "initialPrice": 0.1265,
+    "finalPrice": 0.1264,
+    "percentageChange": "-0.08",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "TROY",
+    "initialPrice": 0.004373,
+    "finalPrice": 0.004367,
+    "percentageChange": "-0.14",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "POLYX",
+    "initialPrice": 0.3989,
+    "finalPrice": 0.3985,
+    "percentageChange": "-0.10",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "MOVR",
+    "initialPrice": 19.3,
+    "finalPrice": 19.271,
+    "percentageChange": "-0.15",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "GLMR",
+    "initialPrice": 0.377,
+    "finalPrice": 0.3762,
+    "percentageChange": "-0.21",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ARB",
+    "initialPrice": 1.1071,
+    "finalPrice": 1.1056,
+    "percentageChange": "-0.14",
+    "date": "2024-12-05"
+  },
+  {
+    "token": "ETHFI",
+    "initialPrice": 2.649,
+    "finalPrice": 2.64,
+    "percentageChange": "-0.34",
+    "date": "2024-12-05"
+  }
+]

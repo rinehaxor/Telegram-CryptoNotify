@@ -1,7 +1,13 @@
 import TelegramBot from 'node-telegram-bot-api';
 import axios from 'axios';
-import { TOKENS, tokenSuggestions } from './token.js';
-import { CHAT_ID, TELEGRAM_BOT_TOKEN } from './config.js';
+import { TOKENS, tokenSuggestions } from './config/token.js';
+import { CHAT_ID, TELEGRAM_BOT_TOKEN } from './config/config.js';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Konfigurasi Telegram Bot
 const telegramBotToken = TELEGRAM_BOT_TOKEN;
@@ -10,12 +16,27 @@ const CHANNEL_USERNAME = '';
 
 const bot = new TelegramBot(telegramBotToken, { polling: true });
 
-// Token yang akan dipantau
-
 const lastNotificationTime = {};
 const prices = {};
+const dailyData = {};
 const priceThreshold = 2;
 const NOTIFICATION_INTERVAL = 24 * 60 * 60 * 1000;
+const JSON_FILE_PATH = path.join(__dirname, 'token_data.json');
+
+const saveDailyDataToFile = () => {
+   const today = new Date().toISOString().split('T')[0]; // Tanggal hari ini
+   const dataToSave = Object.entries(dailyData).map(([token, data]) => ({
+      token,
+      initialPrice: data.initialPrice,
+      finalPrice: data.finalPrice,
+      percentageChange: data.percentageChange.toFixed(2),
+      date: today,
+   }));
+
+   const jsonData = JSON.stringify(dataToSave, null, 2);
+   fs.writeFileSync(JSON_FILE_PATH, jsonData);
+   console.log(`Data token berhasil disimpan ke ${JSON_FILE_PATH}`);
+};
 
 const getTokenPrice = async (symbol) => {
    try {
@@ -43,6 +64,7 @@ const monitorPrices = async () => {
    for (const token of TOKENS) {
       if (!prices[token]) {
          prices[token] = await getTokenPrice(token);
+         dailyData[token] = { initialPrice: prices[token], finalPrice: null, percentageChange: 0 };
          console.log(`Harga awal ${token}: $${prices[token]}`);
       }
    }
@@ -55,6 +77,10 @@ const monitorPrices = async () => {
          const initialPrice = prices[token];
          const percentageChange = ((currentPrice - initialPrice) / initialPrice) * 100;
          const now = Date.now();
+
+         dailyData[token].finalPrice = currentPrice;
+         dailyData[token].percentageChange = percentageChange;
+
          if (Math.abs(percentageChange) >= priceThreshold && (!lastNotificationTime[token] || now - lastNotificationTime[token] > NOTIFICATION_INTERVAL)) {
             let message = `⚠️ Harga ${token} ${percentageChange.toFixed(2)}%!\nHarga saat ini: $${currentPrice}  ${percentageChange > 0 ? 'naik 📈' : 'turun 📉'}`;
             if (percentageChange > 0) {
@@ -75,7 +101,16 @@ const monitorPrices = async () => {
 
          console.log(`Harga ${token}: $${currentPrice} (${percentageChange.toFixed(2)}% dari harga awal)`);
       }
-   }, 10000); // Interval cek setiap 10 detik
+   }, 10000);
+
+   setInterval(() => {
+      saveDailyDataToFile();
+      // Reset dailyData
+      for (const token of TOKENS) {
+         prices[token] = dailyData[token].finalPrice;
+         dailyData[token] = { initialPrice: prices[token], finalPrice: null, percentageChange: 0 };
+      }
+   }, NOTIFICATION_INTERVAL);
 };
 
 monitorPrices();
