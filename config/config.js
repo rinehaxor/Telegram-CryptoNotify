@@ -1,2 +1,7 @@
-export const TELEGRAM_BOT_TOKEN = '7681031945:AAGW4LFx1pQ1BDmEA9JJWChP3IGwuvVC87U';
-export const CHAT_ID = '6677142846';
+import dotenv from 'dotenv';
+
+// Memuat file .env ke process.env
+dotenv.config();
+
+export const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+export const CHAT_ID = process.env.CHAT_ID;

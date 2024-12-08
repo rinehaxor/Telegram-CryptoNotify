@@ -1,17 +1,18 @@
 import TelegramBot from 'node-telegram-bot-api';
+import db from './db.js';
 import axios from 'axios';
 import { TOKENS, tokenSuggestions } from './config/token.js';
 import { CHAT_ID, TELEGRAM_BOT_TOKEN } from './config/config.js';
-import fs from 'fs';
+import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+dotenv.config();
 
 // Konfigurasi Telegram Bot
 const telegramBotToken = TELEGRAM_BOT_TOKEN;
-const chatId = CHAT_ID;
+const chatId = process.env.CHAT_ID;
 const CHANNEL_USERNAME = '';
 
 const bot = new TelegramBot(telegramBotToken, { polling: true });
@@ -19,23 +20,23 @@ const bot = new TelegramBot(telegramBotToken, { polling: true });
 const lastNotificationTime = {};
 const prices = {};
 const dailyData = {};
-const priceThreshold = 2;
+const priceThreshold = 0.1;
 const NOTIFICATION_INTERVAL = 24 * 60 * 60 * 1000;
-const JSON_FILE_PATH = path.join(__dirname, 'token_data.json');
 
-const saveDailyDataToFile = () => {
-   const today = new Date().toISOString().split('T')[0]; // Tanggal hari ini
-   const dataToSave = Object.entries(dailyData).map(([token, data]) => ({
-      token,
-      initialPrice: data.initialPrice,
-      finalPrice: data.finalPrice,
-      percentageChange: data.percentageChange.toFixed(2),
-      date: today,
-   }));
-
-   const jsonData = JSON.stringify(dataToSave, null, 2);
-   fs.writeFileSync(JSON_FILE_PATH, jsonData);
-   console.log(`Data token berhasil disimpan ke ${JSON_FILE_PATH}`);
+const savePriceToDatabase = (token, initialPrice, finalPrice, percentageChange) => {
+   const date = new Date().toISOString().split('T')[0]; // Format tanggal (YYYY-MM-DD)
+   db.run(
+      `INSERT INTO prices (token, date, initialPrice, finalPrice, percentageChange) 
+       VALUES (?, ?, ?, ?, ?)`,
+      [token, date, initialPrice, finalPrice, percentageChange],
+      (err) => {
+         if (err) {
+            console.error('Gagal menyimpan data ke database:', err.message);
+         } else {
+            console.log(`Data harga ${token} berhasil disimpan ke database.`);
+         }
+      }
+   );
 };
 
 const getTokenPrice = async (symbol) => {
@@ -77,24 +78,26 @@ const monitorPrices = async () => {
          const initialPrice = prices[token];
          const percentageChange = ((currentPrice - initialPrice) / initialPrice) * 100;
          const now = Date.now();
-
-         dailyData[token].finalPrice = currentPrice;
-         dailyData[token].percentageChange = percentageChange;
-
          if (Math.abs(percentageChange) >= priceThreshold && (!lastNotificationTime[token] || now - lastNotificationTime[token] > NOTIFICATION_INTERVAL)) {
-            let message = `⚠️ Harga ${token} ${percentageChange.toFixed(2)}%!\nHarga saat ini: $${currentPrice}  ${percentageChange > 0 ? 'naik 📈' : 'turun 📉'}`;
+            let message = `⚠️ Harga ${token} ${percentageChange > 0 ? 'naik' : 'turun'} ${percentageChange.toFixed(2)}%!\nHarga saat ini: $${currentPrice}`;
+
+            // Tambahkan saran beli/jual berdasarkan kenaikan/penurunan harga
             if (percentageChange > 0) {
+               // Jika harga naik, sarankan untuk membeli
                if (tokenSuggestions[token] && tokenSuggestions[token].length > 0) {
                   message += `\n💡 Saran: Beli ${tokenSuggestions[token].join(' dan ')}.`;
                } else {
                   message += `\n💡 Saran: Pertimbangkan untuk membeli token ini.`;
                }
             } else {
+               // Jika harga turun, sarankan untuk menjual
                message += `\n💡 Saran: Pertimbangkan untuk menjual token ${token}.`;
             }
 
             bot.sendMessage(chatId, message);
             // sendMessageToChannel(message);
+
+            // Reset harga awal setelah notifikasi
             lastNotificationTime[token] = now;
             prices[token] = currentPrice;
          }
@@ -103,16 +106,27 @@ const monitorPrices = async () => {
       }
    }, 10000);
 
+   // Interval untuk reset data harian setiap 24 jam
    setInterval(() => {
-      saveDailyDataToFile();
-      // Reset dailyData
+      const today = new Date().toISOString().split('T')[0];
+      for (const token in dailyData) {
+         const data = dailyData[token];
+         if (data.finalPrice !== null) {
+            savePriceToDatabase(token, data.initialPrice, data.finalPrice, data.percentageChange);
+         }
+      }
+
+      // Reset data harian
       for (const token of TOKENS) {
-         prices[token] = dailyData[token].finalPrice;
+         prices[token] = dailyData[token].finalPrice; // Set harga akhir jadi harga awal
          dailyData[token] = { initialPrice: prices[token], finalPrice: null, percentageChange: 0 };
       }
+
+      console.log(`Data token berhasil disimpan untuk tanggal ${today} dan data direset.`);
    }, NOTIFICATION_INTERVAL);
 };
 
+// Jalankan fungsi monitoring
 monitorPrices();
 
 bot.on('message', (msg) => {

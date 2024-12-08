@@ -11,7 +11,9 @@
    "dependencies": {
       "axios": "^1.7.8",
       "ccxt": "^4.4.34",
+      "dotenv": "^16.4.7",
       "node-fetch": "^3.3.2",
-      "node-telegram-bot-api": "^0.66.0"
+      "node-telegram-bot-api": "^0.66.0",
+      "sqlite3": "^5.1.7"
    }
 }
